@@ -1,0 +1,10 @@
+/* A few default FlexBox commands.
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: initial;
+}
+*/
