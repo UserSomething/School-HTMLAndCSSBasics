@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Home page</title>
 </head>
-<body>
-    <header>
-        <h1>Header title</h1>
+<body class="flex-container">
+    <header class="flex-header">
+        <h1>Home page</h1>
         <nav>
-            <ul>
+            <ul class="flex-ul">
                 <li><a href="site1">Site 1</a></li>
                 <li><a href="site2">Site 2</a></li>
                 <li><a href="site3">Site 3</a></li>
@@ -18,54 +18,65 @@
         </nav>
         <a href="/login.html">Login page</a>
     </header>
-    <main>
-        <h2>Main title</h2>
-        <p>This is some text.</p>
-        <article>
-            <h3>Article 1</h3>
-            <p>Article 1 text 1.</p>
-            <p>Article 1 text 2.</p>
-            <img src="/images/hardware.png" 
-            alt="A zoomed in picture of hardware."
-            width="130" 
-            height="130"
-            >
-        </article>
-        <article>
-            <h3>Article 2</h3>
-            <p>Article 2 text 1.</p>
-            <p>Article 2 text 2.</p>
-        </article>
-    </main>
-    <aside>
-        <h2>Aside Title</h2>
-        <ul>
-            <li>
-                <h3>Nepal</h3>
-                <ol>
-                    <li>Bhimdatta 146k</li>
-                    <li>Tilottama 100k</li>
-                    <li>Tikapur 80k</li>
-                </ol>
-            </li>
-            <li>
-                <h3>Hungary</h3>
-                <ol>
-                    <li>Budapest 1,7M</li>
-                    <li>Miskolc 152k</li>
-                    <li>Sopron 63k</li>
-                </ol>
-            </li>
-            <li>
-                <h3>Spain</h3>
-                <ol>
-                    <li>Madrid 6,2M</li>
-                    <li>Valladolid 395k</li>
-                    <li>Toledo 119k</li>
-                </ol>
-            </li>
-        </ul>
-    </aside>
+    <div class="main-and-aside-content">
+        <main class="main-content">
+            <h2>Main title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget dictum quam. 
+                Vivamus ac sollicitudin elit. Vivamus a facilisis massa. Morbi vel lorem eget lectus vehicula 
+                eleifend non eu risus. Aenean rutrum, nibh ac feugiat rhoncus, quam elit lobortis mauris, ut mattis 
+                arcu nibh vel eros. Aliquam sagittis scelerisque turpis at venenatis. Nam sed lorem mollis, interdum 
+                lectus vel, lobortis libero. Donec sit amet volutpat ipsum, sed convallis libero. Integer vehicula 
+                ipsum id molestie condimentum. Fusce interdum commodo aliquam. Pellentesque laoreet a dui sed cursus. 
+                Sed aliquam nibh id cursus venenatis.
+            </p>
+            <div class="flex-articles">
+                <article>
+                    <h3>Article 1</h3>
+                    <p>Article 1 text 1.</p>
+                    <p>Article 1 text 2.</p>
+                    <img src="/images/hardware.png" 
+                    alt="A zoomed in picture of hardware."
+                    width="130" 
+                    height="130"
+                    >
+                </article>
+                <article>
+                    <h3>Article 2</h3>
+                    <p>Article 2 text 1.</p>
+                    <p>Article 2 text 2.</p>
+                </article>
+            </div>
+        </main>
+        <aside>
+            <h2>Aside Title</h2>
+            <ul>
+                <li>
+                    <h3>Nepal</h3>
+                    <ol>
+                        <li>Bhimdatta 146k</li>
+                        <li>Tilottama 100k</li>
+                        <li>Tikapur 80k</li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>Hungary</h3>
+                    <ol>
+                        <li>Budapest 1,7M</li>
+                        <li>Miskolc 152k</li>
+                        <li>Sopron 63k</li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>Spain</h3>
+                    <ol>
+                        <li>Madrid 6,2M</li>
+                        <li>Valladolid 395k</li>
+                        <li>Toledo 119k</li>
+                    </ol>
+                </li>
+            </ul>
+        </aside>
+    </div>
     <footer>
         <span>&copy;Pavle Tomovic</span>
     </footer>

@@ -1,10 +1,48 @@
-/* A few default FlexBox commands.
-.container {
+body {
+    display: flex;
+    flex-direction: column;
+
+    width: 1024px;
+    margin: auto;
+    
+    font-family: sans-serif;
+}
+
+.main-and-aside-content, .flex-header, .flex-ul, .flex-articles {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: initial;
 }
-*/
+
+.flex-articles {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-header {
+    justify-content: space-between;
+}
+
+.main-content {
+    flex: 1 1 auto;
+}
+
+#login-header {
+    text-transform: uppercase;
+}
+
+#login-form {
+    border: 1px solid lightskyblue;
+    border-radius: 25px;
+}
+
+#login-reset-button {
+    background-color: darkgoldenrod;
+}
+
+#login-submit-button {
+    background-color: green;
+}
+
+#main-login-content {
+    margin: auto;
+}
